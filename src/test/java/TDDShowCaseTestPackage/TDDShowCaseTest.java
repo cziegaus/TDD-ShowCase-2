@@ -12,7 +12,7 @@ public class TDDShowCaseTest {
     }
 
     @Test
-    public void secondTest() {
+    public void secondTest(){
         System.out.println("Das ist der zweite Test.");
         assertTrue(true);
     }
