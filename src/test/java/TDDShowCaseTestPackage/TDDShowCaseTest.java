@@ -1,21 +1,16 @@
 package TDDShowCaseTestPackage;
 
-import org.junit.*;
+import TDDShowCasePackage.*;
 import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class TDDShowCaseTest {
 
-    @Test
-    public void firstTest() {
-        System.out.println("Das ist der erste Test.");
-        assertTrue(true);
-    }
+    TimeDifference aTimeDifference = new TimeDifference();
 
     @Test
-    public void secondTest(){
-        System.out.println("Das ist der zweite Test.");
-        assertTrue(true);
+    public void timeDifferenceTest_1Std() {
+        aTimeDifference.setTimeValues("10:00", "11:00");
+        assertEquals(1.0, aTimeDifference.getTimeDifference(), 0.0);
     }
 }
-
-
