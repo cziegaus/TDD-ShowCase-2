@@ -14,10 +14,19 @@ public class TDDShowCaseTest {
         assertEquals(1.0, aTimePair.getTimeDifference(), 0.0);
     }
 
-    //@Test
-    //public void timeDifferenceTest_0Std() {
-    //    aTimePair.setTimeValues("11:00", "11:00");
-    //    assertEquals(0.0, aTimePair.getTimeDifference(), 0.0);
-    //}
+    @Test
+    public void timeDifferenceTest_0Std() {
+        aTimePair.setTimeValues("11:00", "11:00");
+        assertEquals(0.0, aTimePair.getTimeDifference(), 0.0);
+    }
 
+    @Test
+    public void timeDifferenceTest_invalidFormat() {
+        aTimePair.setTimeValues("33:00", "11:00");
+
+        TimePair.TimePairException aTimePairException =  assertThrows(TimePair.TimePairException.class,
+                                                         () -> aTimePair.getTimeDifference());
+
+        assertEquals(501, (long) aTimePairException.getMessageNr());
+    }
 }
