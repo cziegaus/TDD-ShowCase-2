@@ -39,8 +39,8 @@ public class TimePair {
     // 503: Invalid time period (end time < start time)
 
  public class TimePairException extends RuntimeException {
-        String message = "";
-        Long messageNr = 0L;
+        private final String message;
+        private final Long messageNr;
 
         public TimePairException (String argMessage, long argMessageNr) {
             super(argMessage);
@@ -51,8 +51,6 @@ public class TimePair {
             return message;
         }
         public Long getMessageNr() {
-
-
             return messageNr;
      }
  }
