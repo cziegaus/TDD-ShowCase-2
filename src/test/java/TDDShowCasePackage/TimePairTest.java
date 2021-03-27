@@ -1,6 +1,5 @@
-package TDDShowCaseTestPackage;
+package TDDShowCasePackage;
 
-import TDDShowCasePackage.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
