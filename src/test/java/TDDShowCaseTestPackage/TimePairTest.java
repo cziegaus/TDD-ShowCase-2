@@ -4,7 +4,7 @@ import TDDShowCasePackage.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class TDDShowCaseTest {
+public class TimePairTest {
 
     TimePair aTimePair = new TimePair();
 
