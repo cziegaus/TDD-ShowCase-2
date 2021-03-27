@@ -52,7 +52,7 @@ public class TimePair {
         }
         public Long getMessageNr() {
 
-            
+
             return messageNr;
      }
  }
