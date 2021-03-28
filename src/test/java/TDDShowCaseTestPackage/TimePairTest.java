@@ -1,6 +1,8 @@
-package TDDShowCasePackage;
+package TDDShowCaseTestPackage;
 
 import static org.junit.Assert.*;
+
+import TDDShowCasePackage.TimePair;
 import org.junit.Test;
 
 public class TimePairTest {
