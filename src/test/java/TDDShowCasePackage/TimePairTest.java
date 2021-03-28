@@ -23,8 +23,8 @@ public class TimePairTest {
     public void timeDifferenceTest_invalidFormat() {
         aTimePair.setTimeValues("33:00", "11:00");
 
-        TimePair.TimePairException aTimePairException =  assertThrows(TimePair.TimePairException.class,
-                                                         () -> aTimePair.getTimeDifference());
+        TimePair.TimePairException aTimePairException = assertThrows(TimePair.TimePairException.class,
+                () -> aTimePair.getTimeDifference());
 
         assertEquals(501, (long) aTimePairException.getMessageNr());
     }
