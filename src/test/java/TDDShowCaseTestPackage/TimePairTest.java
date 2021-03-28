@@ -9,6 +9,7 @@ public class TimePairTest {
 
     TimePair aTimePair = new TimePair();
 
+
     @Test
     public void timeDifferenceTest_1Std() {
         aTimePair.setTimeValues("10:00", "11:00");
